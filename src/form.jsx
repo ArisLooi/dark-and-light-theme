@@ -1,3 +1,4 @@
+/* Form component that renders the form with buttons. */
 export default function Form({ theme }) {
     return (
         <panel title="Welcome" theme={theme}>
@@ -7,6 +8,7 @@ export default function Form({ theme }) {
     );
 }
 
+/* Panel component that wraps the form elements and applies the theme. */
 function Panel({ title, children, theme }) {
     const className = 'panel-' + theme;
     return (
@@ -17,6 +19,7 @@ function Panel({ title, children, theme }) {
     );
 }
 
+/* Button component that renders a button with the appropriate theme. */
 function Button({ children, theme }) {
     const className = 'button-' + theme;
     return (
