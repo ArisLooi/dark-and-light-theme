@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css'
 import Form from './form'
 
+/* Main component that handles theme toggling. */
 export default function App() {
   const [theme, setTheme] = useState('light');
   return (
